@@ -14,10 +14,10 @@
 
   <body ng-app="angularModule" ng-controller="angularController">
     <div ng-repeat="value in arr">
-      {{value}}
+      {{value.stuff}}
     </div>
 
-    <button class="waves-effect waves-light btn" ng-click="autoRefresh()">autoRefresh</button>
+    <button ng-disabled="isDisabled" class="waves-effect waves-light btn" ng-click="getQuote()">autoRefresh</button>
 
 
     <script src="client.js"></script>
